@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildWiseIndia-WebPage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #4682b4;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 75px;
+      background-color: rgb(52, 52, 89);
+      color: white;
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: aliceblue;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(200, 200, 255);
+    }
+     /* .firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px 0;
+  padding: 0 20px;
+  min-height: 70vh; /* make it more vertically aligned */
+
+.firstSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding: 0 5%;
+  min-height: 90vh; /* Hero section fills more vertical space */
+}
+
+
+
+.firstSection > div {
+  width: 40%;
+  min-width: 300px;
+}
+
+.leftSection {
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 1.4;
+  width:45%;
+}
+
+.rightSection img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+  
+
+
+    .purple {
+      color: rgb(52, 52, 89);
+    }
+
+    main hr {
+      border: 0;
+      background: gainsboro;
+      /* height: 1.2px;
+      margin: 40px 84px; */
+       margin: 60px auto;
+      width: 90%;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .secondSection,
+    .servicesSection,
+    .contactSection {
+      max-width: 80vw;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    .secondSection {
+      background-color: rgb(52, 52, 89);
+      color: white;
+      line-height: 1.8;
+    }
+
+    .secondSection h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #ffd700;
+    }
+
+    .servicesSection h2,
+    .contactSection h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: rgb(52, 52, 89);
+    }
+
+    .serviceCards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: rgb(52, 52, 89);
+      margin-bottom: 10px;
+    }
+
+    .contactSection form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contactSection input,
+    .contactSection textarea {
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+
+    .contactSection button {
+      background-color: rgb(52, 52, 89);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .contactSection button:hover {
+      background-color: rgb(70, 70, 110);
+    }
+
+    ul li {
+      margin-left: 20px;
+    }
+    .contactInfo {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #333;
+}
+.contactInfo a {
+  color: rgb(52, 52, 89);
+  text-decoration: none;
+}
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+/* Mobile Phones (up to 767px) */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .firstSection > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .leftSection {
+    font-size: 2rem;
+  }
+
+  .rightSection img {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .secondSection,
+  .servicesSection,
+  .contactSection {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .serviceCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .contactSection form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .contactInfo {
+    text-align: left;
+    padding: 0 10px;
+  }
+}
+
+/* Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .firstSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .firstSection > div {
+    width: 80%;
+  }
+
+  .leftSection {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .rightSection img {
+    max-width: 70vw;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">BuildWise India</div>
+      <div class="right">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection" id="Home">
+      <div class="leftSection">
+        Welcome To       <span class="purple">BuildWise India</span><br />
+        <span id="element"></span>
+      </div>
+
+      <div class="rightSection">
+        <img src="download.jpg" alt="Background" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondSection" id="about">
+      <h2>About Us</h2>
+      <p>
+        At <strong>BuildWise India</strong>, we are dedicated to transforming your vision into reality with smart, efficient, and cost-effective civil engineering solutions. Whether you are planning a new home, renovating a commercial space, or managing a construction site, our expert team is here to guide you through every step.
+        <br /><br />
+        We specialize in:
+        <ul>
+          <li>2D/3D House Planning and Layouts</li>
+          <li>Accurate Cost Estimation</li>
+          <li>On-site Supervision and Project Monitoring</li>
+          <li>Contractor and Vendor Collaboration</li>
+          <li>Material Selection Guidance and Sustainability Tips</li>
+        </ul>
+        Our mission is to simplify construction for everyone — making it accessible, transparent, and high-quality.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="servicesSection" id="services">
+      <h2>Our Services</h2>
+      <div class="serviceCards">
+        <div class="card">
+          <h3>2D/3D House Planning</h3>
+          <p>Professional layout design to meet your space needs and aesthetics.</p>
+        </div>
+        <div class="card">
+          <h3>Cost Estimation</h3>
+          <p>Detailed budget planning and project cost control analysis.</p>
+        </div>
+        <div class="card">
+          <h3>Site Supervision</h3>
+          <p>Experienced engineers to supervise your site and ensure quality.</p>
+        </div>
+        <div class="card">
+          <h3>Contractor Support</h3>
+          <p>We help you connect with trusted and verified contractors.</p>
+        </div>
+        <div class="card">
+          <h3>Material Guidance</h3>
+          <p>Expert advice on selecting durable and sustainable materials.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="contactSection" id="contact">
+      <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/myzjrkad" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <input type="hidden" name="_subject" value="New Message from BuildWise Website">
+  <button type="submit">Send Message</button>
+</form>
+
+    </br>
+      <div class="contactInfo">
+  <p><strong>Phone:</strong> <a href="Mob no::+8669884307">+91 8669884307</a></p>
+  <p><strong>Email:</strong> <a href="mailto:buildwiseindia@gmail.com">buildwiseindia004@gmail.com</a></p>
+  <p><strong>Instagram:</strong> <a href="https://instagram.com/buildwiseindia" target="_blank">@buildwise_india</a></p>
+</div>
+
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        'For House Planning (2D/3D Layouts).',
+        'For Cost Estimation.',
+        'For Site Supervision.',
+        'For Contractor Support.',
+        'For Material Selection Guidance.',
+        '& More...'
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
